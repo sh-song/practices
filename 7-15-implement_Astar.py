@@ -51,9 +51,8 @@ def search(grid,init,goal,cost,heuristic):
     g = 0
     #######################SOL
     f = g + heuristic[x][y]
-    #######################
     open = [[f, g, x, y]]
-
+    #######################
     found = False  # flag that is set when search is complete
     resign = False # flag set if we can't find expand
     count = 0
